@@ -203,22 +203,22 @@
                 <&inc_dec_kp LA(BACKSPACE) LA(DELETE)>;
 
             bindings = <
-&kp TILDE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8     &kp NUMBER_9     &kp NUMBER_0     &kp KP_NUMBER_9
-&trans     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8    &kp NUMBER_9    &kp NUMBER_0  &kp HOME       &kp END       &kp KP_ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6
-&trans     &trans        &trans        &trans          &trans          &trans        &kp PAGE_DOWN  &kp KP_MINUS  &kp KP_PLUS      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
-&trans     &trans        &trans        &trans          &trans          &kp CAPS      &trans         &kp DELETE    &trans           &kp KP_NUMBER_0  &dot_comma       &kp KP_ENTER
-                         &kp RIGHT     &kp DOWN_ARROW  &kp LEFT_ARROW  &kp UP_ARROW  &trans         &trans        &trans           &trans
+&kp TILDE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8     &kp NUMBER_9     &kp NUMBER_0     &kp KP_NUMBER_9
+&trans     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9    &kp NUMBER_0  &kp HOME       &kp END       &kp KP_ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6
+&trans     &trans        &trans        &trans        &trans          &trans        &kp PAGE_DOWN  &kp KP_MINUS  &kp KP_PLUS      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
+&trans     &trans        &trans        &trans        &trans          &kp CAPS      &trans         &kp DELETE    &trans           &kp KP_NUMBER_0  &dot_comma       &kp KP_ENTER
+                         &kp UP_ARROW  &kp RIGHT     &kp DOWN_ARROW  &kp LEFT      &trans         &trans        &trans           &trans
             >;
         };
 
         TERTIARY_LAYER {
             display-name = "tertiary_layer";
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT               &kp HASH            &kp DOLLAR          &kp PERCENT       &kp CARET       &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp F6           &kp F7               &kp F8              &kp F9              &kp F10           &trans          &kp PLUS       &kp GRAVE     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
-&trans  &kp F11          &kp F12              &kp F13             &kp F14             &kp F15           &kp UNDERSCORE  &trans         &trans        &trans                &trans                 &trans
-&trans  &trans           &trans               &trans              &trans              &trans            &trans          &trans         &trans        &trans                &trans                 &trans
-                         &kp LS(RIGHT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(LEFT_ARROW)  &kp LS(UP_ARROW)  &trans          &trans         &trans        &trans
+&trans  &kp EXCLAMATION  &kp AT            &kp HASH            &kp DOLLAR          &kp PERCENT    &kp CARET       &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &kp F6           &kp F7            &kp F8              &kp F9              &kp F10        &trans          &kp PLUS       &kp GRAVE     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
+&trans  &kp F11          &kp F12           &kp F13             &kp F14             &kp F15        &kp UNDERSCORE  &trans         &trans        &trans                &trans                 &trans
+&trans  &trans           &trans            &trans              &trans              &trans         &trans          &trans         &trans        &trans                &trans                 &trans
+                         &kp LS(UP_ARROW)  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT)  &trans          &trans         &trans        &trans
             >;
         };
 
