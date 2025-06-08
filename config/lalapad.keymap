@@ -185,13 +185,13 @@
 
         DEFAULT_LAYER {
             display-name = "Default";
-            sensor-bindings = <&scroll_down_up>, <&inc_dec_kp BACKSPACE DELETE>;
+            sensor-bindings = <&scroll_down_up>, <&inc_dec_kp BACKSPACE LG(Z)>;
 
             bindings = <
 &kp TAB     &kp Q  &kp W             &kp E        &kp R  &kp T                     &kp Y          &kp U        &kp I            &kp O       &kp P           &mt EQUAL MINUS
 &kp LCTRL   &kp A  &kp S             &kp D        &kp F  &kp G                     &kp H          &kp J        &kp K            &kp L       &mt2 SEMI LBKT  &mt2 SQT RBKT
 &sk LSHFT   &kp Z  &kp X             &kp C        &kp V  &kp B                     &kp N          &kp M        &kp COMMA        &kp PERIOD  &mt2 UP SLASH   &kp BSLH
-&kp ESCAPE  &mo 3  &kp LEFT_ALT      &lt 1 SPACE  &mo 2  &lt TERTIARY_LAYER LANG2  &mkp LCLK      &lt 2 ENTER  &lt 1 LANG2      &mkp LCLK   &mkp RCLK       &kp LANG1
+&kp ESCAPE  &mo 3  &kp LEFT_COMMAND  &lt 1 SPACE  &mo 2  &lt TERTIARY_LAYER LANG2  &mkp LCLK      &lt 2 ENTER  &lt 1 LANG2      &mkp LCLK   &kp LANG1       &kp ESCAPE
                    &kp LEFT_COMMAND  &mkp LCLK    &mo 2  &mkp RCLK                 &allow_pageup  &allow_home  &allow_pagedown  &allow_end
             >;
         };
@@ -203,10 +203,10 @@
                 <&inc_dec_kp LA(BACKSPACE) LA(DELETE)>;
 
             bindings = <
-&kp TILDE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0     &kp KP_NUMBER_9
-&trans     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9    &kp NUMBER_0  &kp LEFT_ARROW  &kp DOWN      &kp UP_ARROW  &kp RIGHT        &kp KP_NUMBER_5  &kp KP_NUMBER_6
-&trans     &trans        &trans        &trans        &trans          &trans        &kp PAGE_DOWN   &kp KP_MINUS  &kp KP_PLUS   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
-&trans     &trans        &trans        &trans        &trans          &kp LSHFT     &trans          &kp DELETE    &trans        &kp KP_NUMBER_0  &dot_comma       &kp KP_ENTER
+&kp TILDE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
+&trans     &trans        &trans        &mkp LCLK     &mkp RCLK       &trans        &kp LEFT_ARROW  &kp DOWN      &kp UP_ARROW  &kp RIGHT     &trans        &trans
+&trans     &trans        &trans        &trans        &trans          &trans        &trans          &trans        &trans        &trans        &trans        &trans
+&trans     &trans        &trans        &trans        &trans          &kp LSHFT     &trans          &kp DELETE    &trans        &trans        &trans        &trans
                          &kp UP_ARROW  &kp RIGHT     &kp DOWN_ARROW  &kp LEFT      &trans          &trans        &trans        &trans
             >;
         };
@@ -240,11 +240,11 @@
         MOUSE_R_LAYER {
             display-name = "mouse_r_layer";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo SCROLL_R_LAYER
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4   &mkp MB5   &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans
+&trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans     &trans     &trans     &trans
+&trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo SCROLL_R_LAYER
+&trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &mkp MB4   &mkp MB5   &trans     &trans
+&trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans     &trans     &trans     &trans
+                &trans  &trans     &trans     &trans  &trans  &trans  &trans     &trans
             >;
         };
 
