@@ -188,10 +188,10 @@
             sensor-bindings = <&scroll_down_up>, <&inc_dec_kp BACKSPACE LG(Z)>;
 
             bindings = <
-&kp TAB     &kp Q             &kp W             &kp E        &kp R  &kp T      &kp Y          &kp U        &kp I            &kp O       &kp P           &mt EQUAL MINUS
-&kp LCTRL   &kp A             &kp S             &kp D        &kp F  &kp G      &kp H          &kp J        &kp K            &kp L       &mt2 SEMI LBKT  &mt2 SQT RBKT
-&sk LSHFT   &kp Z             &kp X             &kp C        &kp V  &kp B      &kp N          &kp M        &kp COMMA        &kp PERIOD  &mt2 UP SLASH   &kp BSLH
-&kp ESCAPE  &kp LEFT_COMMAND  &kp LEFT_COMMAND  &lt 1 SPACE  &mo 2  &mo 3      &mkp LCLK      &lt 2 ENTER  &lt 1 LANG2      &mkp LCLK   &kp LANG1       &kp ESCAPE
+&kp TAB     &kp Q             &kp W             &kp E        &kp R  &kp T      &kp Y          &kp U        &kp I            &kp O       &kp P                    &mt EQUAL MINUS
+&kp LCTRL   &kp A             &kp S             &kp D        &kp F  &kp G      &kp H          &kp J        &kp K            &kp L       &mt2 SEMI LBKT           &mt2 SQT RBKT
+&sk LSHFT   &kp Z             &kp X             &kp C        &kp V  &kp B      &kp N          &kp M        &kp COMMA        &kp PERIOD  &mt2 SLASH LS(QUESTION)  &kp BSLH
+&kp ESCAPE  &kp LEFT_COMMAND  &kp LEFT_COMMAND  &lt 1 SPACE  &mo 2  &mo 3      &mkp LCLK      &lt 2 ENTER  &lt 1 LANG2      &mkp LCLK   &kp LANG1                &kp ESCAPE
                               &kp LEFT_COMMAND  &mkp LCLK    &mo 2  &mkp RCLK  &allow_pageup  &allow_home  &allow_pagedown  &allow_end
             >;
         };
