@@ -185,13 +185,15 @@
 
         DEFAULT_LAYER {
             display-name = "Default";
-            sensor-bindings = <&scroll_down_up>, <&inc_dec_kp BACKSPACE DELETE>;
+            sensor-bindings =
+                <&scroll_down_up>,
+                <&inc_dec_kp LA(BACKSPACE) LA(DELETE)>;
 
             bindings = <
 &kp TAB     &kp Q     &kp W             &kp E        &kp R         &kp T      &kp Y          &kp U        &kp I            &kp O       &kp P                &mt EQUAL MINUS
 &kp LCTRL   &kp A     &kp S             &kp D        &kp F         &kp G      &kp H          &kp J        &kp K            &kp L       &mt2 SEMI LBKT       &mt2 SQT RBKT
 &sk LSHFT   &kp Z     &kp X             &kp C        &kp V         &kp B      &kp N          &kp M        &kp COMMA        &kp PERIOD  &mt2 QUESTION SLASH  &kp BSLH
-&kp ESCAPE  &mkp MB4  &mkp MB5          &lt 1 SPACE  &mo 2         &mo 3      &kp BACKSPACE  &lt 2 ENTER  &lt 1 LANG2      &mkp LCLK   &kp LANG1            &kp ESCAPE
+&kp ESCAPE  &mkp MB4  &mkp MB5          &lt 2 SPACE  &mo 2         &mo 3      &kp BACKSPACE  &lt 2 ENTER  &lt 2 LANG2      &mkp LCLK   &kp LANG1            &kp ESCAPE
                       &kp LEFT_COMMAND  &mkp LCLK    &kp LEFT_ALT  &mkp RCLK  &allow_pageup  &allow_home  &allow_pagedown  &allow_end
             >;
         };
@@ -204,7 +206,7 @@
 
             bindings = <
 &kp TILDE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
-&trans     &trans        &trans        &trans        &trans         &trans        &kp LEFT_ARROW  &kp DOWN      &kp UP_ARROW  &kp RIGHT     &kp LC(LEFT)  &kp LC(RIGHT)
+&trans     &trans        &trans        &trans        &kp RIGHT_ALT  &trans        &kp LEFT_ARROW  &kp DOWN      &kp UP_ARROW  &kp RIGHT     &kp LC(LEFT)  &kp LC(RIGHT)
 &trans     &trans        &trans        &trans        &trans         &trans        &trans          &trans        &trans        &trans        &trans        &trans
 &trans     &trans        &trans        &trans        &trans         &kp LSHFT     &trans          &kp DELETE    &trans        &trans        &trans        &trans
                          &kp LG(X)     &kp LG(V)     &kp LG(LS(Z))  &kp LG(C)     &trans          &trans        &trans        &trans
@@ -241,7 +243,7 @@
             display-name = "mouse_r_layer";
             bindings = <
 &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans     &trans     &trans     &trans
-&trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo SCROLL_R_LAYER
+&trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 5
 &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &mkp MB4   &mkp MB5   &trans     &trans
 &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans     &trans     &trans     &trans
                 &trans  &trans     &trans     &trans  &trans  &trans  &trans     &trans
@@ -262,11 +264,11 @@
         MOUSE_L_LAYER {
             display-name = "mouse_l_layer";
             bindings = <
-&trans              &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&mo SCROLL_R_LAYER  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans              &trans     &mkp MB5   &mkp MB4   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans              &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                               &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&mo 5   &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &mkp MB5   &mkp MB4   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                   &trans     &trans     &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
